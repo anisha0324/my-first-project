@@ -8,7 +8,7 @@ pipeline {
                 sh '/usr/local/bin/aws configure set AWS_SECRET_ACCESS_KEY m0IU1XjfvjaDMnfyOjFDjZnJ/4YTIvaO2la0Meg3'
                 sh '/usr/local/bin/aws configure set AWS_DEFAULT_REGION us-east-1'
                 sh '/usr/local/bin/aws sts get-caller-identity'
-                sh '/user/local/bin/aws s3 ls'
+                sh '/usr/local/bin/aws s3 ls'
             }
         }
     }
