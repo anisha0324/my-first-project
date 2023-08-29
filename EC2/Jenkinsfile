@@ -8,7 +8,8 @@ pipeline {
                 sh '/usr/local/bin/aws configure set AWS_SECRET_ACCESS_KEY m0IU1XjfvjaDMnfyOjFDjZnJ/4YTIvaO2la0Meg3'
                 sh '/usr/local/bin/aws configure set AWS_DEFAULT_REGION us-east-1'
                 sh '/usr/local/bin/aws sts get-caller-identity'
-                sh '/usr/local/bin/aws ec2 run-instances --image-id ami-0f34c5ae932e6f0e4 --instance-type t2.micro --key-name my-keypair --security-group-ids sg-0f124803c76014a13 --subnet-id subnet-07adbb6e18993b024'
+                sh '/usr/local/bin/aws ec2 run-instances --image-id ami-0f34c5ae932e6f0e4 --instance-type t2.micro --key-name my-keypair --security-group-ids sg-0f124803c76014a13 --subnet-id subnet-07adbb6e18993b024 --region us-east-1'
+
                 
             }
         }
