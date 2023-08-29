@@ -3,8 +3,7 @@ pipeline {
     stages {
         stage('build') {
             steps {
-                sh '/usr/local/bin/aws s3 cp  /Users/nareshsalla/Documents/assignment/a.html s3://test2ani-bucket/application/'
-
+                sh '/usr/local/bin/aws s3 cp  /Users/nareshsalla/Documents/assignment/a.html s3://test2ani-bucket/application/a.html'
             }
         }
     }
