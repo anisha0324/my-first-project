@@ -1,0 +1,13 @@
+pipeline {
+    agent any
+    stages {
+        stage('build') {
+            steps {
+                sh '/usr/local/bin/aws sts get-caller-identity'
+                sh '/usr/local/bin/aws ec2 terminate-instances --instance-id i-028ecdede9f5e5248 --region us-east-1'
+
+                
+            }
+        }
+    }
+}
