@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('build') {
             steps {
-                sh 'aws ec2 terminate-instances --instance-id i-i-0e7deb3bf2bf04a74 --region us-east-1'   
+                sh 'aws ec2 terminate-instances --instance-id i-0e7deb3bf2bf04a74 --region us-east-1'   
             }
         }
     }
