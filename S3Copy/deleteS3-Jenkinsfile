@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('build') {
             steps {
-                sh 'aws s3 rm s3://test2ani-bucket/a.html'   
+                sh 'aws s3 rm s3://test2ani-bucket/b.html'   
             }
         }
     }
