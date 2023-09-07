@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('build') {
             steps {
-                sh 'aws s3 cp ${WORKSPACE}/S3Copy/pic_trulli.jpeg s3://test2ani-bucket/pic_trulli.jpeg'
+                sh 'aws s3 cp ${WORKSPACE}/S3Copy/a.html s3://test2ani-bucket/a.html'
             }
         }
     }
