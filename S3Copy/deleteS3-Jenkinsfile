@@ -1,0 +1,10 @@
+pipeline {
+    agent any
+    stages {
+        stage('build') {
+            steps {
+                sh 'aws s3 rm s3://test2ani-bucket/b.html'   
+            }
+        }
+    }
+}

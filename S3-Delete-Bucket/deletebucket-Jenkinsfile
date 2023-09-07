@@ -1,0 +1,10 @@
+pipeline {
+    agent any
+    stages {
+        stage('build') {
+            steps {
+                sh 'aws s3api delete-bucket --bucket test2ani-bucket '   
+            }
+        }
+    }
+}
