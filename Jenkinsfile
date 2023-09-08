@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('build') {
             steps {
-                sh 'aws s3api create-bucket --bucket antest-bucket1
+                sh 'aws s3api create-bucket --bucket test2ani-bucket
 '
             }
         }
